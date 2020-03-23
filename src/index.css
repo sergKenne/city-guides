@@ -1,0 +1,25 @@
+
+.footer  {
+  color: #fff;
+}
+
+
+.footer a { 
+    color: rgba(109, 109, 109);
+    display: block;
+}
+
+.footer a:hover {
+  color: rgb(172, 172, 172);
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  color: #fff;
+  border: none;
+}
+
+ .navbar-toggler:focus {
+  outline: none;
+  border-color: rgba(255,255,255,0);
+}
