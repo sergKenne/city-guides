@@ -8,7 +8,7 @@ class Details extends Component {
         return (
             <div>
                 <div>
-                    <UseContext.Consumer>
+                    <UseContext.Consumer> 
                         {
                             (data) => {
                                 const {headerTitle, headerSubTitle,  headerText, title, description, img, maps} = data.detailInfo;
@@ -21,12 +21,12 @@ class Details extends Component {
                                                 <h4>{ headerSubTitle }</h4>
                                                 <p>{ headerText }</p>
                                                 <ul className="list-unstyled row">
-                                                    <li className="col-lg-2 col-sm-4 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-facebook-f"></i></a></li>
-                                                    <li className="col-lg-2 col-sm-4 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-twitter"></i></a></li>
-                                                    <li className="col-lg-2 col-sm-4 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-google-plus-g"></i></a></li>
-                                                    <li className="col-lg-2 col-sm-4 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-reddit"></i></a></li>
-                                                    <li className="col-lg-2 col-sm-4 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-whatsapp"></i></a></li>
-                                                    <li className="col-lg-2 col-sm-4 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-facebook-messenger"></i></a></li>
+                                                    <li className="col-lg-2 col-md-4 col-sm-6 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-facebook-f"></i></a></li>
+                                                    <li className="col-lg-2 col-md-4 col-sm-6 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-twitter"></i></a></li>
+                                                    <li className="col-lg-2 col-md-4 col-sm-6 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-google-plus-g"></i></a></li>
+                                                    <li className="col-lg-2 col-md-4 col-sm-6 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-reddit"></i></a></li>
+                                                    <li className="col-lg-2 col-md-4 col-sm-6 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-whatsapp"></i></a></li>
+                                                    <li className="col-lg-2 col-md-4 col-sm-6 mb-5"><a href="#" className="text-dark h2"><i className="fab fa-facebook-messenger"></i></a></li>
                                                 </ul>
                                              </div>    
                                         </HeaderDatails>    
@@ -111,6 +111,24 @@ const HeaderDatails = styled.header`
     @media(max-width: 760px) {
         h1,h4 {
             color: #fff;
+        }
+    }
+
+    @media(max-width: 426px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .mb-5 {
+            margin-bottom: .8rem!important;
+        }
+        
+        p {
+            padding: 0 2%;
+        }
+
+        i {
+            font-size: 1.5rem;
         }
     }
 `;

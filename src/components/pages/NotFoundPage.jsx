@@ -3,8 +3,11 @@ import React, { Component } from 'react'
 class NotFoundPage extends Component {
     render() {
         return (
-            <div>
-                <h1>Not found page....</h1>
+            <div className="container">
+                <div className="text-center py-5">
+                    <h1>Not found page....</h1>
+                </div>
+                
             </div>
         )
     }
